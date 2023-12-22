@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.dashboard-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.upper-half {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    padding-left: 30px; 
+}
+
+.card {
+    width: 100%;
+    background-color: #f8f9fa;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #99ccff;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+.lower-half {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 10px;
+}
+
+.bar-chart {
+    width: 45%;
+    height: 300px;
+    background-color: #eee;
+}
